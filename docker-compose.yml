@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  markdown-editor:
+    build: .
+    container_name: obsidian-web-editor
+    ports:
+      - "3000:3000"
+    volumes:
+      - /home/pi/storage/obsidian:/data/notes:rw
+      - /home/pi/.ssh:/root/.ssh:ro
+    environment:
+      - NODE_ENV=production
+      - NOTES_DIR=/data/notes
+      - LAPTOP_USER=crimson
+      - LAPTOP_HOST=100.111.240.27  # Your laptop's Tailscale IP
+      - LAPTOP_PATH=/home/crimson/Work/backup/redheart
+    restart: unless-stopped
+    network_mode: host

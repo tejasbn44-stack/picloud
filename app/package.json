@@ -1,0 +1,15 @@
+{
+  "name": "obsidian-web-editor",
+  "version": "2.0.0",
+  "description": "Lightweight markdown editor for Obsidian notes with universal access",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.18.2",
+    "chokidar": "^3.5.3",
+    "marked": "^9.1.6",
+    "archiver": "^6.0.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
