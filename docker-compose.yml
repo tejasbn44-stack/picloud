@@ -7,8 +7,8 @@ services:
     ports:
       - "3000:3000"
     volumes:
-      - /home/pi/storage/obsidian:/data/notes:rw
-      - /home/pi/.ssh:/root/.ssh:ro
+      - /home/jimi/storage/obsidian:/data/notes:rw
+      - /home/jimi/.ssh:/root/.ssh:ro
     environment:
       - NODE_ENV=production
       - NOTES_DIR=/data/notes
