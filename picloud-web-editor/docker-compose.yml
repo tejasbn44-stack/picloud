@@ -13,7 +13,7 @@ services:
       - NODE_ENV=production
       - NOTES_DIR=/data/notes
       - LAPTOP_USER=crimson
-      - LAPTOP_HOST=100.111.240.27  # Your laptop's Tailscale IP
+      - LAPTOP_HOST= # Your laptop's Tailscale IP
       - LAPTOP_PATH=/home/crimson/Work/backup/redheart
     restart: unless-stopped
     network_mode: host
